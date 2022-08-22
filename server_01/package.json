@@ -1,11 +1,17 @@
 {
-  "name": "server_01",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "server_01",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server/index.js",
+    "scripts": {
+        "start": "nodemon --inspect ./server/index.js ",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.27.2",
+        "express": "^4.18.1",
+        "nodemon": "^2.0.19"
+    }
 }

@@ -1,0 +1,27 @@
+{
+    "services": {
+        "registrytest": {
+            "index": 1,
+            "instances": [
+                {
+                    "apiname": "registrytest",
+                    "protocol": "http",
+                    "host": "localhost",
+                    "port": 5001,
+                    "enabled": true,
+                    "url": "http://localhost:5001/"
+                },
+                {
+                    "apiname": "registrytest",
+                    "protocol": "http",
+                    "host": "localhost",
+                    "port": 5002,
+                    "enabled": true,
+                    "url": "http://localhost:5002/"
+                }
+            ],
+            "loadBalanceStratery": "ROUND_ROBIN"
+        }
+    },
+    "auth": { "users": { "john": { "username": "john", "password": "123" } } }
+}
